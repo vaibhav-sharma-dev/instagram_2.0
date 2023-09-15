@@ -1,18 +1,28 @@
-# IGClone
-Welcome to IGClone, an impressive Instagram clone built using the MERN (MongoDB, Express, React, Node.js) stack! 
-This project showcases the power of modern web development technologies to create a fully functional social media platform.
+# Instagram_2.0
+An impressive Instagram clone built using the MERN (MongoDB, Express, React, Node.js) stack! 
 
-## Key Features
-**🌟Complete Social Media Experience**: Enjoy user registration, login, and profile management features.
 
-**📸Post Management**: Seamlessly add, delete, and interact with posts, just like on Instagram.
+In the project "Evently_FE" directory, you can run:
 
-**🤝Connect with Others**: Follow and unfollow functionality to connect with friends and fellow users.
+### `npm install`
 
-**❤️Engagement**: Like, unlike, and comment on posts to express your thoughts and interact with others.
+Installs all the node_modules in the app.
 
-**🔔Real-time Notifications**: Enjoy the real-time thrill of instant notifications via Socket.io, ensuring you never miss a beat when someone likes, comments, or follows you. 
+### `npm start`
 
-**🛠️Robust Backend**: Built with Express.js, the REST API handles authentication, post interactions, image uploads, and data retrieval.
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-**🗄️Efficient Data Storage**: MongoDB handles data storage efficiently, making sure your information is safe and swiftly accessible.
+
+In the project "Evently_BE" directory, you can run:
+
+###  `npm install`
+
+Installs all the node_modules in the app.
+
+Connect the app to MongoDB database and add your connection string into your application code.
+Replace <user> with the user and <password> with the password in the connection string.
+
+### `node app.js`
+
+Runs the app database on http://localhost:4000
