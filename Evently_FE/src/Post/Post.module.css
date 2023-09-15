@@ -1,0 +1,169 @@
+.post {
+    width: 70%;
+    border: 1px solid #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 2.5rem auto;
+}
+
+.post .postAuthorInfo {
+    display: flex;
+    align-items: center;
+    padding: 0.35rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.post .postAuthorInfo a {
+    text-decoration: none;
+}
+
+.post .postAuthorInfo .moreActions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.post .postAuthorInfo .moreActions img {
+    height: 18px;
+    width: 18px;
+}
+.post .avatarURL {
+    height: 25px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 0 0.5rem;
+}
+
+.post .postContent > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 0.5rem;
+}
+
+.post .postContent p {
+    padding: 0.5rem;
+}
+
+.post .inputCommentContainer {
+    margin-top: 1rem;
+    display: flex;
+    border-top: 1px solid #e7e7e7;
+}
+
+.post .inputCommentContainer button {
+    border: none;
+    background-color: white;
+    color: #00B2FF;
+    padding: 0.5rem;
+}
+
+.post .inputCommentContainer button:disabled {
+    color: #a0a0a0;
+}
+
+.post .inputCommentContainer input {
+    width: 100%;
+    padding: 0.5rem;
+    color: #000000;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+}
+
+.post .commentSection input:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.post .commentSection .commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+
+.post .hideComments {
+    display: none !important;
+}
+
+.post .commentsContainer::-webkit-scrollbar {
+    width: 2px;
+}
+
+.post .commentsContainer::-webkit-scrollbar-thumb {
+    background-color: #9f9f9f;
+    border-radius: 5px;
+}
+
+.post .heartFill {
+    fill: red;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.post .heartUnFill {
+    width: max-content;
+    fill: black;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.post .savePostUnFill {
+    width: max-content;
+    padding: 0;
+    margin-top: -2px;
+    margin-left: auto;
+}
+
+.post .savePostUnFill * {
+    cursor: pointer;
+}
+
+.post .commentIcon {
+    height: 24px !important;
+    width: 24px !important;
+    cursor: pointer;
+}
+
+.post .likes {
+    font-weight: 600;
+    font-size: 0.8rem;
+    height: max-content;
+    line-height: 1px;
+    cursor: pointer;
+}
+
+.post .postContent .date {
+    color: #7f7f7f;
+    font-size: 10px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    padding-top: 3px;
+}
+
+.post {
+    font-size: 14px;
+}
+
+.post .postActions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width:576px) {
+
+    .post {
+        width: 95%;
+        margin: 1.5rem auto;
+        font-size: 0.8rem;
+    }
+
+}

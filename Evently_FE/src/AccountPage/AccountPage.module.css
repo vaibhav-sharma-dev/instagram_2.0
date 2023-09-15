@@ -1,0 +1,215 @@
+.accountPageContainer {
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    overflow-y: auto;
+}
+
+.heroBanner {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    padding-top: 5rem;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+}
+
+.profilePicContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.profilePicContainer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.meta>div>p {
+    margin-bottom: 1rem;
+}
+
+.meta>div>p>span {
+    margin-right: 5px;
+    font-weight: 600;
+    color: #3c4043;
+
+}
+
+.meta>div>button {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.meta .followBtn {
+    background: #007bff;
+    padding: 0.45rem 1.5rem;
+    color: white;
+    width: max-content;
+    transition: all 0.3s;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.meta h2 {
+    margin: 0;
+    color: #3c4043;
+}
+
+.meta .bio {
+    margin-bottom: 1rem;
+
+}
+
+.postsContainer {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.postsContainer .post {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.postsContainer .post img {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.postsContainer .post .postInfoOverlay {
+    visibility: hidden;
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.postsContainer .post:hover .postInfoOverlay {
+    visibility: visible;
+}
+
+.postsContainer .post:hover .postInfoOverlay div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+}
+
+.postsContainer .post .postInfoOverlay span {
+    color: white;
+    margin-left: 3px;
+}
+
+.postsContainer .post .postInfoOverlay img {
+    height: 22px;
+    aspect-ratio: 1/1;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width:576px) {
+
+    .accountPageContainer {
+        width: 100%;
+    }
+
+    .profilePicContainer img {
+        width: 100px;
+        height: 100px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meta>div>p {
+        margin-bottom: 0.5rem;
+    }
+
+    .meta>div>button {
+        display: block;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 0.5rem;
+        border: none;
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+    .meta .followBtn {
+        padding: 0.45rem 1.5rem;
+        width: max-content;
+        transition: all 0.3s;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        border: none;
+    }
+
+    .postsContainer {
+        gap: 5px;
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+    }
+
+    .postsContainer .post {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+    }
+
+    .postsContainer .post img {
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .postsContainer .post .hoverComment {
+        width: 20px;
+        margin-top: 4px;
+    }
+}
