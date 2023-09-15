@@ -20,6 +20,8 @@ In the project "Evently_BE" directory, you can run:
 
 Installs all the node_modules in the app.
 
+Cheers!!!
+
 Connect the app to MongoDB database and add your connection string into your application code.
 Replace <user> with the user and <password> with the password in the connection string.
 
